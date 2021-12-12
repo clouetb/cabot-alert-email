@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='EmailAlert',
             fields=[
-                ('alertplugin_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='cabotapp.AlertPlugin')),
+                ('alertplugin_ptr', models.OneToOneField(parent_link=True, on_delete=models.CASCADE, auto_created=True, primary_key=True, serialize=False, to='cabotapp.AlertPlugin')),
             ],
             options={
                 'abstract': False,
